@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 
 :root{
-    --verde-medio: #41B3A2;
-    --verde-claro: #BDE8CA;
-    --roxo: #D7C3F1;
+    --bg-color: #41B3A2;
+    --primary-color: #BDE8CA;
+    --second-color: #D7C3F1;
     --fonte: "Nunito Sans", sans-serif;
 
 body{
-    background-color: var(--verde-medio);
-    color: var(--verde-claro);
+    background-color: var(--primary-color);
+    color: var(--second-color);
     font-family: var(--fonte);
 }
