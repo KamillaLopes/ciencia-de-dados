@@ -10,3 +10,4 @@ async function visualizarInformacoesGlobais() {
         conectadas em alguma rede social e passam em média ${dados.tempo_medio} que horas conectadas.`
         console.log(paragrafo)
     }
+    visualizarInformacoesGlobais()
