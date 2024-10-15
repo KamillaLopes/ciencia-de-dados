@@ -8,6 +8,8 @@ async function visualizarInformacoesGlobais() {
         paragrafo.innerHTML = `Você sabia que o mundo tem ${dados.total_pessoas_mundo} 
         de pessoas e que aproximadamente ${dados.total_pessoas_conectadas} que estão 
         conectadas em alguma rede social e passam em média ${dados.tempo_medio} que horas conectadas.`
-        console.log(paragrafo)
+
+        const container = document.getElementById ('graficos-container')
+        container.appendChild(paragrafo)
     }
     visualizarInformacoesGlobais()
