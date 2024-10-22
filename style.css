@@ -56,3 +56,10 @@ footer {
     height: 3rem;
     margin-top: 2rem;
 }
+
+.graficos-container_texto{
+    font-size: 1.3em;
+    text-align: center;
+    padding: 2rem;
+    border: var(--second-color) solid 2px;
+}
