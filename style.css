@@ -57,6 +57,10 @@ footer {
     margin-top: 2rem;
 }
 
+.graficos-container {
+    margin: 5rem;
+   }   
+
 .graficos-container_texto{
     font-size: 1.3em;
     text-align: center;
