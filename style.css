@@ -5,6 +5,7 @@
     --primary-color: #BDE8CA;
     --second-color: #D7C3F1;
     --fonte: "Nunito Sans", sans-serif;
+}
 
 body{
     background-color: var(--bg-color);
