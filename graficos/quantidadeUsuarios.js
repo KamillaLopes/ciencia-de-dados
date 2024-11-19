@@ -55,4 +55,5 @@ async function quantidadeUsuariosPorRede() {
     document.getElementById('graficos-container').appendChild(grafico)
     Plotly.newPlot(grafico, data, layout)
 }
+
 quantidadeUsuarios()
