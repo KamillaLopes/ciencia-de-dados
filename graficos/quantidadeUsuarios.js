@@ -26,8 +26,8 @@ async function quantidadeUsuarios() {
             x: 0,
             font: {
                 color: getCSS('--primary-color'),
-                size: 30,
-                font: getCSS('--font')
+                family: getCSS('--font'),
+                size: 30
             }
         },
         xaxis: {
