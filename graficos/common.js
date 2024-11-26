@@ -1,11 +1,12 @@
 const getCSS = (variavel) => {
-    return getComputedStyle(document.body).getPropertyValue(variavel)
-};
+    const bodyStyles = getComputedStyle(document.body)
+    return bodyStyles.getPropertyValue(variavel)
+}
 
 const tickConfig = {
-    color: getCSS('--primary-color'),
-    size: 15,
-    family: getCSS('--font')
-
+    family: getCSS('--font'),
+    size: 16,
+    color: getCSS('--primary-color')
 }
-export{ getCSS, tickConfig }
+
+export {getCSS, tickConfig}
