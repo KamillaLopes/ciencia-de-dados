@@ -5,12 +5,12 @@ async function quantidadeUsuariosPorEsporte() {
     const res = await fetch(url)
     const dados = await res.json()
     const nomeDosEsportes = Object.keys(dados)
-    const quantidadeDeUsuarios = Object.values(dados)
+    const quantidadeDeAtletas = Object.values(dados)
 
     const data = [
         {
             x: nomeDosEsportes, 
-            y: quantidadeDeUsuarios, 
+            y: quantidadeDeAtletas, 
             type: 'bar',
             marker: {
                 color: getCSS('--primary-color')
