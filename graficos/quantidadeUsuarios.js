@@ -7,7 +7,7 @@ async function quantidadeUsuariosPorEsporte() {
     const nomeDosEsportes = Object.keys(dados)
     const quantidadeDeAtletas = Object.values(dados)
 
-    const data = [
+    const data = {
         {
             x: nomeDosEsportes, 
             y: quantidadeDeAtletas, 
@@ -16,7 +16,7 @@ async function quantidadeUsuariosPorEsporte() {
                 color: getCSS('--primary-color')
             }
         }
-    ]
+    }
 
     const layout = {
         plot_bgcolor: getCSS('--bg-color'),
