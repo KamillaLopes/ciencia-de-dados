@@ -1,15 +1,15 @@
 import { getCSS, tickConfig } from "./common.js"
 
-async function quantidadeUsuariosPorRede() {
+async function quantidadeUsuariosPorEsporte() {
     const url = 'https://raw.githubusercontent.com/KamillaLopes/ciencia-de-dados/refs/heads/main/basededados/esportes-mais-praticados.json'
     const res = await fetch(url)
     const dados = await res.json()
-    const nomeDasRedes = Object.keys(dados)
+    const nomeDosEsportes = Object.keys(dados)
     const quantidadeDeUsuarios = Object.values(dados)
 
     const data = [
         {
-            x: nomeDasRedes, 
+            x: nomeDosEsportes, 
             y: quantidadeDeUsuarios, 
             type: 'bar',
             marker: {
@@ -22,7 +22,7 @@ async function quantidadeUsuariosPorRede() {
         plot_bgcolor: getCSS('--bg-color'),
         paper_bgcolor: getCSS('--bg-color'),
         title: {
-            text: 'Redes sociais com mais usuários',
+            text: 'ESportes com mais usuários',
             x: 0,
             font: {
                 color: getCSS('--primary-color'),
@@ -33,7 +33,7 @@ async function quantidadeUsuariosPorRede() {
         xaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Nome das redes',
+                text: 'Nome dos esportes',
                 font: {
                     color: getCSS('--secondary-color')
                 }
@@ -42,7 +42,7 @@ async function quantidadeUsuariosPorRede() {
         yaxis: {
             tickfont: tickConfig,
             title: {
-                text: 'Bilhões de usuários ativos',
+                text: 'Bilhões de pessoas ativos',
                 font: {
                     color: getCSS('--secondary-color')
                 }
@@ -56,4 +56,4 @@ async function quantidadeUsuariosPorRede() {
     Plotly.newPlot(grafico, data, layout)
 }
 
-quantidadeUsuariosPorRede()
+quantidadeUsuariosPorEsporte()
